@@ -12,7 +12,7 @@
 
 #import "FacebookSdk.h"
 #import <objc/runtime.h>
-
+#import <Cordova/CDVPlugin.h>
 @interface FacebookSdk ()
 
 @property (strong, nonatomic) NSString* dialogCallbackId;
