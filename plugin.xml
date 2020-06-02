@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="vn-native-2-example-library" version="1.0.21">
+    <name>Vn Native example library</name>
+    <description>Vn Native Example Library</description>
+    <license>Vn Native 2.0</license>
+    <keywords>Vnnative, Example library</keywords>
+    <platform name="ios">
+        <js-module src="www/ios/login.js" name="login">
+            <clobbers target="login" />
+        </js-module>
+        <config-file target="config.xml" parent="/widget">
+            <feature name="Login">
+                <param name="ios-package" value="Login" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Login.h" />
+        <source-file src="src/ios/Login.m" />
+    </platform>
+    <platform name="android">
+        <js-module src="www/android/login.js" name="login">
+            <clobbers target="login" />
+        </js-module>
+        <config-file target="config.xml" parent="/widget">
+            <feature name="Login">
+                <param name="android-package" value="org.apache.cordova.plugin.Login"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Login.java" target-dir="src/org/apache/cordova/plugin" />
+    </platform>
+    <platform name="browser">
+        <js-module src="www/browser/echo.js" name="echo">
+            <clobbers target="echo" />
+        </js-module>
+    </platform>
+    <platform name="osx">
+        <js-module src="www/osx/echo.js" name="echo">
+            <clobbers target="echo" />
+        </js-module>
+    </platform>
+    <platform name="windows">
+        <js-module src="www/windows/echo.js" name="echo">
+            <clobbers target="echo" />
+        </js-module>
+        <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
+</plugin>
