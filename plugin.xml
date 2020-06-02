@@ -6,20 +6,16 @@
     <license>Vn Native 2.0</license>
     <keywords>Vnnative, Example library</keywords>
     <platform name="ios">
-        <js-module src="www/ios/loginfacebook.js" name="loginfacebook">
-            <clobbers target="loginfacebook" />
+        <js-module src="www/ios/facebooksdk.js" name="facebooksdk">
+            <clobbers target="facebooksdk" />
         </js-module>
         <config-file target="config.xml" parent="/widget">
-            <feature name="LoginFacebook">
-                <param name="ios-package" value="LoginFacebook" />
+            <feature name="facebooksdk">
+                <param name="ios-package" value="facebooksdk" />
             </feature>
         </config-file>
-        <header-file src="src/ios/LoginFacebook.h" />
-        <source-file src="src/ios/LoginFacebook.m" />
-        <!-- <framework src="src/ios/Carthage/Build/iOS/FBSDKCoreKit.framework" custom="true"/>
-        <framework src="src/ios/Carthage/Build/iOS/FBSDKLoginKit.framework" custom="true"/>
-        <framework src="src/ios/Carthage/Build/iOS/FBSDKShareKit.framework" custom="true"/> -->
-        <!-- Facebook SDK -->
+        <header-file src="src/ios/FacebookSdk.h" />
+        <source-file src="src/ios/FacebookSdk.m" />
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
