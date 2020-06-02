@@ -3,6 +3,6 @@ module.exports = {
     run :  function(str,callback){
         exec(callback, (err) => {
             callback(err);
-        }, "FacebookLogin", "facebooklogin", [str]);
+        }, "FacebookSdk", "login", [str]);
     }
 }
