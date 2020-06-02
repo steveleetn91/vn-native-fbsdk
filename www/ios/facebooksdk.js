@@ -4,5 +4,10 @@ module.exports = {
         exec(callback, (err) => {
             callback(err);
         }, "FacebookSdk", "login", [str]);
+    },
+    login : function(permission,callback) {
+        exec(callback, (err) => {
+            callback(err);
+        }, "FacebookSdk", "login", [str]);
     }
 }

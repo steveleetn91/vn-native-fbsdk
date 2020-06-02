@@ -10,8 +10,8 @@
             <clobbers target="facebooksdk" />
         </js-module>
         <config-file target="config.xml" parent="/widget">
-            <feature name="facebooksdk">
-                <param name="ios-package" value="facebooksdk" />
+            <feature name="FacebookSdk">
+                <param name="ios-package" value="FacebookSdk" />
             </feature>
         </config-file>
         <header-file src="src/ios/FacebookSdk.h" />
