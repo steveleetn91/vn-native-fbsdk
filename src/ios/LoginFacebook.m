@@ -1,9 +1,9 @@
 #import "Echo.h"
 #import <Cordova/CDVPlugin.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-@implementation Login
+@implementation LoginFacebook
 
-- (void)login:(CDVInvokedUrlCommand*)command
+- (void)loginfacebook:(CDVInvokedUrlCommand*)command
 {
     // fbsdk 
     [openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]

@@ -6,16 +6,16 @@
     <license>Vn Native 2.0</license>
     <keywords>Vnnative, Example library</keywords>
     <platform name="ios">
-        <js-module src="www/ios/login.js" name="login">
-            <clobbers target="login" />
+        <js-module src="www/ios/loginfacebook.js" name="loginfacebook">
+            <clobbers target="loginfacebook" />
         </js-module>
         <config-file target="config.xml" parent="/widget">
-            <feature name="Login">
-                <param name="ios-package" value="Login" />
+            <feature name="LoginFacebook">
+                <param name="ios-package" value="LoginFacebook" />
             </feature>
         </config-file>
-        <header-file src="src/ios/Login.h" />
-        <source-file src="src/ios/Login.m" />
+        <header-file src="src/ios/LoginFacebook.h" />
+        <source-file src="src/ios/LoginFacebook.m" />
     </platform>
     <platform name="android">
         <js-module src="www/android/login.js" name="login">
