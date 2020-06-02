@@ -16,9 +16,9 @@
         </config-file>
         <header-file src="src/ios/LoginFacebook.h" />
         <source-file src="src/ios/LoginFacebook.m" />
-        <framework custom="true" src="src/ios/FacebookSDK/iOS/FBSDKCoreKit.framework" />
-        <framework custom="true" src="src/ios/FacebookSDK/iOS/FBSDKLoginKit.framework" />
-        <framework custom="true" src="src/ios/FacebookSDK/iOS/FBSDKShareKit.framework" />
+        <!-- <framework src="src/ios/FacebookSDK/iOS/FBSDKCoreKit.framework" />
+        <framework src="src/ios/FacebookSDK/iOS/FBSDKLoginKit.framework" />
+        <framework src="src/ios/FacebookSDK/iOS/FBSDKShareKit.framework" /> -->
     </platform>
     <platform name="android">
         <js-module src="www/android/login.js" name="login">
