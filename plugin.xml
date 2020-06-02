@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="vn-native-2-example-library" version="1.0.21">
+        id="vn-native-fbsdk" version="1.0.0">
     <name>Vn Native example library</name>
     <description>Vn Native Example Library</description>
     <license>Vn Native 2.0</license>
