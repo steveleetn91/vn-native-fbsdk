@@ -16,6 +16,7 @@
         </config-file>
         <header-file src="src/ios/LoginFacebook.h" />
         <source-file src="src/ios/LoginFacebook.m" />
+        <framework custom="true" src="src/ios/FacebookSDK/iOS/FBSDKCoreKit.framework" />
     </platform>
     <platform name="android">
         <js-module src="www/android/login.js" name="login">
