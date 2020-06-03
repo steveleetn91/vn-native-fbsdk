@@ -39,6 +39,10 @@
             </feature>
         </config-file>
         <source-file src="src/android/VnNativeFacebookSdk.java" target-dir="src/org/apache/cordova/facebook" />
+        <config-file target="AndroidManifest.xml" parent="application">
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+            <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/fb_app_name" />
+        </config-file>
         <framework src="com.facebook.android:facebook-android-sdk:7.0.0"/>
     </platform>
     <platform name="browser">
