@@ -1,5 +1,5 @@
 // https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/android/ConnectPlugin.java
-package org.apache.cordova.facebooksdk;
+package org.apache.cordova.facebook;
 
 import android.content.Context;
 import android.content.Intent;

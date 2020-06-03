@@ -1,6 +1,6 @@
 {
   "name": "vn-native-fbsdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vn Native Framework - FBSDK Module",
   "main": "index.js",
   "scripts": {
