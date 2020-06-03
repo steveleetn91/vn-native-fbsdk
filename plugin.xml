@@ -33,11 +33,11 @@
             <clobbers target="facebooksdk" />
         </js-module>
         <config-file target="config.xml" parent="/widget">
-            <feature name="FacebookSdk">
-                <param name="android-package" value="org.apache.cordova.plugin.FacebookSdk"/>
+            <feature name="VnNativeFacebookSdk">
+                <param name="android-package" value="org.apache.cordova.plugin.VnNativeFacebookSdk"/>
             </feature>
         </config-file>
-        <source-file src="src/android/FacebookSdk.java" target-dir="src/org/apache/cordova/facebook" />
+        <source-file src="src/android/VnNativeFacebookSdk.java" target-dir="src/org/apache/cordova/facebook" />
         <framework src="com.facebook.android:facebook-android-sdk:7.0.0"/>
     </platform>
     <platform name="browser">

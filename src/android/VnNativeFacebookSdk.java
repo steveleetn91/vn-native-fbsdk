@@ -1,4 +1,4 @@
-// https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/android/FacebookSdk.java
+// https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/android/VnNativeFacebookSdk.java
 package org.apache.cordova.facebook;
 
 import android.content.Context;
@@ -55,7 +55,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class FacebookSdk extends CordovaPlugin {
+public class VnNativeFacebookSdk extends CordovaPlugin {
 
     private static final int INVALID_ERROR_CODE = -2; //-1 is FacebookRequestError.INVALID_ERROR_CODE
     private static final String PUBLISH_PERMISSION_PREFIX = "publish";
@@ -68,7 +68,7 @@ public class FacebookSdk extends CordovaPlugin {
             add("rsvp_event");
         }
     };
-    private final String TAG = "FacebookSdk";
+    private final String TAG = "VnNativeFacebookSdk";
 
     private CallbackManager callbackManager;
     private AppEventsLogger logger;
