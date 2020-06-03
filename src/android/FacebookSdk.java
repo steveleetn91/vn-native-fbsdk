@@ -1,4 +1,4 @@
-// https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/android/ConnectPlugin.java
+// https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/android/FacebookSdk.java
 package org.apache.cordova.facebook;
 
 import android.content.Context;
@@ -68,7 +68,7 @@ public class FacebookSdk extends CordovaPlugin {
             add("rsvp_event");
         }
     };
-    private final String TAG = "ConnectPlugin";
+    private final String TAG = "FacebookSdk";
 
     private CallbackManager callbackManager;
     private AppEventsLogger logger;
