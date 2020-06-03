@@ -1,3 +1,4 @@
+// https://github.com/jeduan/cordova-plugin-facebook4/blob/master/src/ios/FacebookConnectPlugin.m
 //
 //  FacebookSdk.m
 //  GapFacebookConnect
