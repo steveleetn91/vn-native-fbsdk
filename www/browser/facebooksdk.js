@@ -26,6 +26,10 @@ module.exports = {
         });
     },
     connect : function(){
-        return FB;
+        return new Promise((resolve,reject) => {
+            setTimeout(() => {
+                return resolve(FB);
+            },1000);
+        });
     }
 };
