@@ -7,7 +7,7 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 module.exports = {
-    setup : function(appId,apiVersion){
+    setup : function(appId){
         window.fbAsyncInit = function () {
             FB.init({
                 appId: appId,
