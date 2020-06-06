@@ -20,7 +20,7 @@ module.exports = {
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
         return new Promise((resolve,reject) => {
-            resolve(FB);
+            resolve(true);
         });
     },
     connect : function(){
