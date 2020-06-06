@@ -21,7 +21,7 @@ module.exports = {
         }(document, 'script', 'facebook-jssdk'));
         return new Promise((resolve,reject) => {
             setTimeout(() => {
-                resolve(true);
+                return resolve(true);
             },3000);
         });
     },
