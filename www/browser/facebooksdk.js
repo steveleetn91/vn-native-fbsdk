@@ -17,4 +17,16 @@ window.fbAsyncInit = function () {
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-module.exports = FB;
+module.exports = {
+    connect : function(){
+        setTimeout(() => {
+            if(FB) {
+                return new Promise((resolve,reject) => {
+                    resolve(FB);
+                });
+            } else {
+                this.connect();
+            }
+        },1000);
+    }
+};
