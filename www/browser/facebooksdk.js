@@ -21,14 +21,8 @@ module.exports = {
         }(document, 'script', 'facebook-jssdk'));
     },
     connect : function(){
-        setTimeout(() => {
-            if(FB) {
-                return new Promise((resolve,reject) => {
-                    resolve(FB);
-                });
-            } else {
-                this.connect();
-            }
-        },1000);
+        return new Promise((resolve,reject) => {
+            resolve(FB);
+        });
     }
 };
