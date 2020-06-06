@@ -1,14 +1,3 @@
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: appId,
-        cookie: true,
-        xfbml: true,
-        version: apiVersion
-    });
-
-    FB.AppEvents.logPageView();
-
-};
 
 (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -18,6 +7,19 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 module.exports = {
+    setup : function(appId,apiVersion){
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: appId,
+                cookie: true,
+                xfbml: true,
+                version: apiVersion
+            });
+        
+            FB.AppEvents.logPageView();
+        
+        };
+    },
     connect : function(){
         setTimeout(() => {
             if(FB) {
