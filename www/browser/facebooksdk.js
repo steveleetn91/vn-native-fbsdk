@@ -22,7 +22,9 @@ module.exports = {
     },
     connect : function(){
         return new Promise((resolve,reject) => {
-            resolve(FB);
+            setTimeout(() => {
+                resolve(FB);
+            },2000);
         });
     }
 };
