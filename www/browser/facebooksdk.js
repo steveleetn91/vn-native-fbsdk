@@ -19,6 +19,9 @@ module.exports = {
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+        return new Promise((resolve,reject) => {
+            resolve(FB);
+        });
     },
     connect : function(){
         return FB;
