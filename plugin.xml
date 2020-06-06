@@ -58,16 +58,13 @@
         </js-module>
     </platform>
     <platform name="osx">
-        <js-module src="www/osx/echo.js" name="echo">
-            <clobbers target="echo" />
+        <js-module src="www/osx/facebooksdk.js" name="facebooksdk">
+            <clobbers target="facebooksdk" />
         </js-module>
     </platform>
     <platform name="windows">
-        <js-module src="www/windows/echo.js" name="echo">
-            <clobbers target="echo" />
-        </js-module>
-        <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
-            <merges target="" />
+        <js-module src="www/windows/facebooksdk.js" name="facebooksdk">
+            <clobbers target="facebooksdk" />
         </js-module>
     </platform>
 </plugin>
