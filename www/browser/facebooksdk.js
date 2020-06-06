@@ -13,7 +13,7 @@ module.exports = {
                 appId: appId,
                 cookie: true,
                 xfbml: true,
-                version: apiVersion
+                version: 'v7.0'
             });
         
             FB.AppEvents.logPageView();
